@@ -1,0 +1,68 @@
+body{
+  background: #cccccc;
+  margin: 0;
+  padding: 0;
+}
+#canvas-div {
+  width: 906px;
+  min-height: 100%;
+  margin: 0 auto;
+  min-height: 10em;
+  padding: 1em;
+  color: #222222;
+  font: 100.01%/1.375 Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  background: #ffffff;
+}
+
+/**
+ * Style for Game
+ */
+
+ #si_logo {
+  display: block;
+  margin: 0 auto;
+}
+canvas {
+  display: block;
+  background: url(../img/space_invaders/background.png) no-repeat;
+  background-size: cover;
+}
+#si_cp {
+  padding: 4px;
+  position: absolute;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.75);
+  -webkit-border-radius: 0 5px 0 0;
+  -moz-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;
+}
+button #si_cp:not(:last-of-type) {
+  margin-right: 5px;
+}
+#si_nextLevel,
+#si_restart,
+#si_start {
+  display: block;
+  position: absolute;
+}
+#si_pause {
+  display: none;
+}
+.si_button {
+  margin-right: 2.5px;
+  font-size: 18px;
+  border: 2.5px solid #ffffff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: impact;
+  background: #000000;
+  color: #ffffff;
+}
+.si_button:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@old_opacity)";
+  filter: alpha(opacity=75);
+  opacity: 0.75;
+  background: none;
+}

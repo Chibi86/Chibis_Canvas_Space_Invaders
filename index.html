@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Chibi's Canvas Space Invaders</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+  <div id="canvas-div">
+    <h1 id="si_title">
+      <img id="si_logo" src="img/space_invaders/logo.png" alt="Chibi's Canvas Space invaders" />
+    </h1>
+    <p>
+      <i>
+        Use left and right arrow or A and D letter keys on keyboard for navigate base, use space to fire on aliens.<br />
+        Pause- or P-keys can be use for pause, S-key to start or continue and R-key will restart game.
+      </i>
+    </p>
+    
+    <canvas id="spaceinvaders" width="900" height="500">
+      Your browser does not support the element HTML5 Canvas.
+    </canvas>
+    
+    <p>
+      Graphic from <a href="https://www.vecteezy.com/vector-art/82970-pixel-vector-space-invaders">zhaolifang @ Vecteezy</a> and <a href="http://www.classicgaming.cc/classics/space-invaders/">Classic Gaming</a>.<br />
+      Audio from <a href="http://www.classicgaming.cc/classics/space-invaders/">Classic Gaming</a> and <a href="http://downloads.khinsider.com/game-soundtracks/album/space-invaders-the-original-game-turbografx-16-/">Khinsider (Video Game Music)</a>.
+    </p>
+  </div>
+
+  <!-- Audio to game -->
+  <audio id="fire" src="audio/shoot.wav"></audio>
+  <audio id="hit" src="audio/invaderkilled.wav"></audio>
+  <audio id="win" src="audio/win.mp3"></audio>
+  <audio id="gameover" src="audio/explosion.wav"></audio>
+  
+  <!--JS-->
+  <script src="js/jquery.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

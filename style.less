@@ -1,0 +1,52 @@
+/**
+ * Import base style
+ */
+@import "../../mall/base.less";
+ 
+/**
+ * Here comes specific style for a certain test program.
+ */
+#si_logo {
+  display: block;
+  margin: 0 auto;
+}
+
+canvas {
+  display: block;
+  background:url(../../img/space_invaders/background.png) no-repeat;
+  background-size: cover;
+}
+
+#si_cp {
+  padding: 6px;
+  position: relative;
+  top: -38px;
+  display: inline-block;
+  background: rgba(0,0,0,0.75);
+  .border-radius(0 5px 0 0);
+  
+  button &:not(:last-of-type) { margin-right: 5px; }
+}
+
+#si_nextLevel, #si_restart, #si_start {
+  display: block;
+  position: relative;
+}
+
+#si_pause { display: none; }
+
+.si_button {
+  margin-bottom: -29px;
+  margin-right: 2.5px;
+  font-size: 18px;
+  border: 2.5px solid #ffffff;
+  .border-radius(5px);
+  font-family: impact;
+  background: #000000;
+  color: #ffffff;
+  
+  &:hover{ 
+    .opacity(0.75);
+    background: none;
+  }
+}
