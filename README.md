@@ -46,9 +46,9 @@ The following external modules are included:
 Install instructions
 --------------------
 
-### 1. Just put files where you want them.
+## 1. Just put files where you want them.
 
-### 2. Modify how many levels and aliens per level:
+## 2. Modify how many levels and aliens per level:
 * If you change canvas heigth, level will increase up to 760px (max level 12, with 15 types of aliens) or decrease if make heigth lower.
 * If you change canvas width, it will increase or decrease.
 * I have max test 760x1200px, not really try decrease that much. Increasing may slow browser down alot...
